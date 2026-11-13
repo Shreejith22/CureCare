@@ -1,0 +1,416 @@
+
+.contacts-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f9f8;
+  color: #173e40;
+  font-family: "DM Sans", sans-serif;
+}
+
+.contacts-sidebar {
+  width: 255px;
+  min-height: 100vh;
+  background: #123d3b;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.contacts-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 55px;
+}
+
+.contacts-brand span {
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  background: #d8f2e9;
+  color: #176653;
+  display: grid;
+  place-items: center;
+}
+
+.contacts-menu-label {
+  color: #a8c7c0;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  margin: 0 0 15px 10px;
+}
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 13px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  color: #d3e6e0;
+  font-size: 14px;
+  transition: .25s ease;
+}
+
+.contacts-nav:hover,
+.contacts-nav.active {
+  background: rgba(255,255,255,.14);
+  color: white;
+  transform: translateX(3px);
+}
+
+.contacts-sidebar-bottom {
+  margin-top: auto;
+  padding: 18px 12px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  color: #8ce0c3;
+}
+
+.contacts-sidebar-bottom p {
+  color: #c5ded7;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.contacts-main {
+  flex: 1;
+  min-width: 0;
+  padding: 42px 5%;
+}
+
+.contacts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.contacts-eyebrow {
+  color: #3b927d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.contacts-header h1 {
+  font-size: clamp(28px, 4vw, 36px);
+  margin: 9px 0;
+  color: #163f3d;
+}
+
+.contacts-header p {
+  color: #78908c;
+  font-size: 14px;
+  margin: 0;
+}
+
+.contacts-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid #d8e8e3;
+  background: white;
+  border-radius: 11px;
+  color: #27685c;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.contacts-demo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 19px;
+  background: #e8f5f0;
+  border: 1px solid #cce8dc;
+  border-radius: 14px;
+  color: #397465;
+  margin-bottom: 27px;
+}
+
+.contacts-demo p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.contacts-section {
+  background: white;
+  border: 1px solid #e5efeb;
+  border-radius: 19px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 25px rgba(29,75,65,.04);
+}
+
+.contacts-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #32947c;
+  margin-bottom: 22px;
+}
+
+.contacts-section-heading h2 {
+  color: #173e40;
+  font-size: 20px;
+  margin: 9px 0 6px;
+}
+
+.contacts-section-heading p {
+  color: #829792;
+  font-size: 13px;
+  margin: 0;
+}
+
+.contact-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.contact-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 19px;
+  border: 1px solid #e6efeb;
+  background: #f9fcfb;
+  border-radius: 15px;
+  transition: .25s;
+}
+
+.contact-avatar,
+.hospital-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: #e5f4ee;
+  color: #368b74;
+}
+
+.contact-placeholder h3,
+.hospital-info h3 {
+  font-size: 14px;
+  margin: 0 0 7px;
+  color: #234b46;
+}
+
+.contact-placeholder p,
+.hospital-info p {
+  font-size: 12px;
+  color: #849994;
+  margin: 0 0 9px;
+}
+
+.contact-status {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #f0f3f2;
+  color: #758983;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.hospital-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 19px;
+  background: #f9fcfb;
+  border: 1px solid #e6efeb;
+  border-radius: 15px;
+}
+
+.hospital-info {
+  flex: 1;
+}
+
+.hospital-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #8a9d97;
+}
+
+.emergency-call-section {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  padding: 25px;
+  border-radius: 19px;
+  background: linear-gradient(120deg, #164c45, #237765);
+  color: white;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 30px rgba(24,92,76,.15);
+}
+
+.emergency-call-icon {
+  width: 57px;
+  height: 57px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: rgba(255,255,255,.15);
+}
+
+.emergency-call-info {
+  flex: 1;
+}
+
+.emergency-call-info span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #b8e7d7;
+  font-weight: 800;
+}
+
+.emergency-call-info h2 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.emergency-call-info p {
+  font-size: 12px;
+  color: #d1e8e0;
+  margin: 0;
+}
+
+.emergency-call-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: #17614e;
+  padding: 12px 17px;
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: .2s;
+}
+
+.emergency-call-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(0,0,0,.13);
+}
+
+.alert-resolution {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: white;
+  border: 1px solid #e5efeb;
+  border-radius: 16px;
+  padding: 21px;
+}
+
+.resolution-icon {
+  color: #368b74;
+  background: #e5f4ee;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  flex-shrink: 0;
+}
+
+.alert-resolution h3 {
+  font-size: 14px;
+  margin: 0 0 7px;
+}
+
+.alert-resolution p {
+  color: #829792;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 0 9px;
+}
+
+.alert-resolution span {
+  font-size: 11px;
+  color: #b27a18;
+  font-weight: 700;
+}
+
+.contacts-footer {
+  text-align: center;
+  color: #9aaca7;
+  font-size: 11px;
+  margin-top: 28px;
+}
+
+@media (max-width: 900px) {
+  .contacts-sidebar {
+    width: 210px;
+  }
+
+  .contact-placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .contacts-page {
+    display: block;
+  }
+
+  .contacts-sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 17px;
+  }
+
+  .contacts-brand {
+    margin-bottom: 20px;
+  }
+
+  .contacts-menu-label,
+  .contacts-sidebar-bottom {
+    display: none;
+  }
+
+  .contacts-nav {
+    display: inline-flex;
+    margin: 3px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .contacts-main {
+    padding: 25px 16px;
+  }
+
+  .contacts-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contacts-section {
+    padding: 19px;
+  }
+
+  .emergency-call-section {
+    flex-wrap: wrap;
+  }
+
+  .emergency-call-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
